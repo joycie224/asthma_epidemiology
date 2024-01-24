@@ -1,0 +1,48 @@
+# Spatial Epidemiology of Childhood Asthma in Australian Cities
+
+## Background
+
+This code repository accompanies a publication that addresses long-standing health inequalities in Australian society, particularly focusing on the impact of the SARS-CoV-2 pandemic. Described as 'faultlines' in a recent call to action by philanthropic organizations, the study emphasizes the importance of understanding and addressing health disparities early in life, with a specific focus on asthma as a major contributor to childhood disease burden.
+
+January 23rd Update: 
+The manuscript has been accepted for publication at the Journal of Allergy and Clinical Immunology, but not yet formally published online yet. The code included in this repository contains some of the PostGIS, postgreSQL, and R programming involved in extracting the data to run the generalized linear model on. A formalized repository will be updated once the publication is online. 
+
+## Objective
+
+The primary objective of this study is to characterize the spatial variation of asthma prevalence among children living within Australia's four largest cities. Additionally, the code aims to quantify the relative contributions of climatic and environmental factors, outdoor air pollution, and socio-economic status in determining this variation.
+
+## Methods
+
+The code employs a Bayesian model with spatial random effects to analyze small-area health status data from the 2021 Australian Census. It regresses the data against a structured collection of proposed explanatory covariates to model the spatial epidemiology of childhood asthma.
+
+## Results
+
+The key findings of the study include:
+
+- The prevalence of asthma in children aged 5-14 years varies among Sydney, Melbourne, Brisbane, and Perth.
+- Intra-city variation at the small-area level is marked, ranging from 6% to 12% between the least and most affected locations in each city.
+- Statistical variance decomposition on a subsample of Australian-born, non-Indigenous children attributes 66% of the intra-city spatial variation to the assembled covariates.
+- Climatic and environmental factors contribute 30%, outdoor air pollution contributes 19%, and areal socio-economic status contributes the greater remainder to the spatial variation.
+
+## Conclusion
+
+The geographical health inequalities in childhood asthma prevalence within Australia's largest cities reflect a complex interplay of factors. Among these factors, socio-economic status emerges as a principal determinant. The findings underscore the need for targeted interventions to address these inequalities and improve the overall health outcomes for children in urban environments.
+
+## Instructions for Use
+
+1. **Data Preparation:**
+   - Ensure you have the necessary datasets, including small-area health status data and explanatory covariates.
+   - Follow the data preparation steps outlined in the code to format and preprocess the data.
+
+2. **Model Implementation:**
+   - Execute the Bayesian model with spatial random effects using the provided code.
+   - Adjust model parameters as needed for specific analyses.
+
+3. **Interpretation of Results:**
+   - Review the output to understand the spatial variation of childhood asthma prevalence and the contributions of different factors.
+
+4. **Further Analysis (Optional):**
+   - Customize the code for additional analyses or explore specific aspects of the data.
+
+
+For questions or issues, please contact [Joyce Mo] at [jqmo@princeton.edu].
